@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>_2048_Ext.Logic</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Saves\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="6.0.3" />
+  </ItemGroup>
+
+</Project>
