@@ -1,6 +1,6 @@
 # 2048 Extended
 
-![](https://1drv.ms/u/s!AiEmVlB_LsNXgdgcZLpADn_Nl-EWCQ?e=H6MlE8)
+![--](https://1drv.ms/u/s!AiEmVlB_LsNXgdgcZLpADn_Nl-EWCQ?e=H6MlE8)
 
 ## Summary
 
