@@ -1,7 +1,5 @@
 # 2048 Extended
 
-![AAA](https://stock.adobe.com/images/abstract-image-of-editorial-bricks-puzzle-game/292347480)
-
 ## Summary
 
 The 2048 is a game consisting of a 4x4-box board on which pieces with numbers are located. The
