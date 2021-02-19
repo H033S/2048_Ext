@@ -1,6 +1,6 @@
 # 2048 Extended
 
-![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3D2048&psig=AOvVaw2x0sMsqfKQEOUlUbvu9ery&ust=1613793596451000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPC-_--H9e4CFQAAAAAdAAAAABAF)
+![AAA](https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fsearch%3Fk%3D2048&psig=AOvVaw2x0sMsqfKQEOUlUbvu9ery&ust=1613793596451000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPC-_--H9e4CFQAAAAAdAAAAABAF)
 
 ## Summary
 
