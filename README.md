@@ -22,3 +22,7 @@ the new piece). In the original game you can only perform this operation twice d
 2. The number of times the move can be undone has no limits (note that each time
 a move is undone, in addition to restoring the board, the points won in the undone move are removed).
 3. The player can save a game to continue it later.
+
+## Author
+
+Antonio Nazco
