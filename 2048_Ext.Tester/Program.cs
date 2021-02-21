@@ -38,13 +38,13 @@ namespace _2048_Ext.Tester
                     break;
 
                 if (inp == "0")
-                    game.DownMove();
+                    game.Move(0);
                 else if (inp == "1")
-                    game.LeftMove();
+                    game.Move(1);
                 else if (inp == "2")
-                    game.UpMove();
+                    game.Move(2);
                 else if (inp == "3")
-                    game.RightMove();
+                    game.Move(3);
                 else if (inp == "4")
                     game.Save();
 
