@@ -51,12 +51,14 @@ namespace _2048_Ext.Logic
 
         public void LoadGame(Game game)
         {
-            PlayerName = game.PlayerName;
-            rows = game.rows;
-            columns = game.columns;
-            best = game.best;
-            table = game.table;
-            tables = game.tables;
+           
+                PlayerName = game.PlayerName;
+                rows = game.rows;
+                columns = game.columns;
+                best = game.best;
+                table = game.table;
+                tables = game.tables;
+           
         }
 
         private int GetTheBest()
@@ -124,8 +126,11 @@ namespace _2048_Ext.Logic
 
 
             //To save the game
+            var _ = DateTime.Now;
+            string code = "" + _.Day + _.Month + _.Year; 
+
             FileStream saveGameFile = new FileStream(
-            $"Saves\\{PlayerName}\\{rows}x{columns}\\Game.txt",
+            $"Saves\\{PlayerName}\\{rows}x{columns}\\Game{code}.txt",
             FileMode.OpenOrCreate,
             FileAccess.Write
             );
@@ -138,19 +143,30 @@ namespace _2048_Ext.Logic
 
         public bool Load(string path)
         {
-            FileStream loadGameFile = new FileStream(
+            try
+            {
+
+
+                FileStream loadGameFile = new FileStream(
                 path,
                 FileMode.Open,
                 FileAccess.Read);
-            BinaryFormatter bf = new BinaryFormatter();
+                BinaryFormatter bf = new BinaryFormatter();
 
-            Game gameLoaded = new Game();
-            gameLoaded = (Game)bf.Deserialize(loadGameFile);
+                Game gameLoaded = new Game();
+                gameLoaded = (Game)bf.Deserialize(loadGameFile);
 
-            loadGameFile.Close();
+                loadGameFile.Close();
 
-            LoadGame(gameLoaded);
+                LoadGame(gameLoaded);
             
+            
+            }
+            catch (Exception)
+            {
+                NewGame("Unknown", 4, 4);
+            }
+
             return true;
         }
 

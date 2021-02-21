@@ -103,6 +103,7 @@ namespace _2048_Ext.Visual
         /// </summary>
         public void CreateTable()
         {
+            Text += $"        Hello, {game.PlayerName}";   
             scoreLbl.Text = $"SCORE \n {game.Score}";
             bestLbl.Text = $"BEST \n {game.Best}";
 
@@ -189,9 +190,10 @@ namespace _2048_Ext.Visual
 
             if (game.DidILose())
             {
+                
                 string message = "You Lose";
                 MessageBox.Show(message);
-                //Close();
+                Close();
             }
         }
 

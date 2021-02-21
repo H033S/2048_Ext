@@ -6,7 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Saves\" />
+    <Compile Remove="Saves\**" />
+    <EmbeddedResource Remove="Saves\**" />
+    <None Remove="Saves\**" />
   </ItemGroup>
 
   <ItemGroup>

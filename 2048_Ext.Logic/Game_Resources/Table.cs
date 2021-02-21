@@ -230,7 +230,7 @@ namespace _2048_Ext.Logic.Game_Resources
                     if (table[i, j] == 0)
                         return false;
 
-                    for (int k = 1; k < dir_x.Length; k+=2)
+                    for (int k = 1; k < dir_x.Length; k++)
                     {
                         int newI = i + dir_x[k];
                         int newJ = j + dir_y[k];
@@ -238,7 +238,7 @@ namespace _2048_Ext.Logic.Game_Resources
                         if (!ItsIn(newI, newJ))
                             continue;
 
-                        if (table[newI, newJ] == 0 || table[i, j] == table[newI, newJ])
+                        if (table[i, j] == table[newI, newJ])
                             return false;
                     }
                 }
@@ -259,7 +259,5 @@ namespace _2048_Ext.Logic.Game_Resources
                 Console.WriteLine();
             }
         }
-
-       
     }
 }

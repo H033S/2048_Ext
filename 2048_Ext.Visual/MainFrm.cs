@@ -26,6 +26,13 @@ namespace _2048_Ext.Visual
 
         private void newBttn_Click(object sender, EventArgs e)
         {
+            if (nameOfPlayertbx.Text == "")
+            {
+                nameOfPlayerlbl.ForeColor = Color.Red;
+                nameReqLbl.Visible = true;
+                return;
+            }
+
             game.NewGame(
                 nameOfPlayertbx.Text,
                 Convert.ToInt32(rowUpDwn.Value),

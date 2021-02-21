@@ -39,6 +39,7 @@
             this.rowslbl = new System.Windows.Forms.Label();
             this.nameOfPlayerlbl = new System.Windows.Forms.Label();
             this.loadFDlog = new System.Windows.Forms.OpenFileDialog();
+            this.nameReqLbl = new System.Windows.Forms.Label();
             this.optgbox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.columnUpDwn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rowUpDwn)).BeginInit();
@@ -47,6 +48,7 @@
             // optgbox
             // 
             this.optgbox.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.optgbox.Controls.Add(this.nameReqLbl);
             this.optgbox.Controls.Add(this.exitBttn);
             this.optgbox.Controls.Add(this.newBttn);
             this.optgbox.Controls.Add(this.loadBttn);
@@ -177,6 +179,17 @@
             // 
             this.loadFDlog.FileName = "LoadGame";
             // 
+            // nameReqLbl
+            // 
+            this.nameReqLbl.AutoSize = true;
+            this.nameReqLbl.ForeColor = System.Drawing.Color.Red;
+            this.nameReqLbl.Location = new System.Drawing.Point(62, 43);
+            this.nameReqLbl.Name = "nameReqLbl";
+            this.nameReqLbl.Size = new System.Drawing.Size(121, 17);
+            this.nameReqLbl.TabIndex = 6;
+            this.nameReqLbl.Text = "Name is Required";
+            this.nameReqLbl.Visible = false;
+            // 
             // mainfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -213,6 +226,7 @@
         private System.Windows.Forms.NumericUpDown columnUpDwn;
         private System.Windows.Forms.Label columnlbl;
         private System.Windows.Forms.OpenFileDialog loadFDlog;
+        private System.Windows.Forms.Label nameReqLbl;
     }
 }
 
